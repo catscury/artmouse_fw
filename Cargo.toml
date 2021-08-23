@@ -13,6 +13,7 @@ cortex-m = "0.6.2"
 cortex-m-rt = "0.6.11"
 # Panic behaviour, see https://crates.io/keywords/panic-impl for alternatives
 panic-halt = "0.2.0"
+embedded-nrf24l01 = "0.2.0"
 
 [dependencies.stm32f1xx-hal]
 version = "0.6.1"
@@ -26,6 +27,6 @@ features = ["rt", "stm32f103", "medium"]
 
 [profile.release]
 codegen-units = 1 # better optimizations
-debug = true # symbols are nice and they don't increase the size on Flash
+debug = false # symbols are nice and they don't increase the size on Flash
 lto = true # better optimizations
 opt-level = "z"

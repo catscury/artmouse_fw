@@ -3,4 +3,7 @@
 build.sh
 build2.sh
 Cargo.lock
+TAGS
+rusty-tags.emacs
+.dir-locals.el
 
