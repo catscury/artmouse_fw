@@ -13,6 +13,7 @@ cortex-m = "0.6.2"
 cortex-m-rt = "0.6.11"
 # Panic behaviour, see https://crates.io/keywords/panic-impl for alternatives
 embedded-nrf24l01 = "0.2.0"
+numtoa = "0.2.4"
 
 [dependencies.panic-semihosting]
 version = "0.5.2"

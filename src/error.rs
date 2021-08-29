@@ -1,3 +1,4 @@
+use usb_device::UsbError;
 
 pub struct AppError {
     pub code : u8,
@@ -18,3 +19,4 @@ macro_rules! def_error {
 
 def_error!(embedded_nrf24l01::Error<stm32f1xx_hal::spi::Error>, 1);
 def_error!(core::convert::Infallible, 2);
+def_error!(UsbError, 3);
